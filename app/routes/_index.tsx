@@ -3,9 +3,9 @@ import { Link } from "@remix-run/react";
 
 import stylesUrl from "~/styles/index.css";
 
-// export const links: LinksFunction = () => [
-//   { rel: "stylesheet", href: stylesUrl },
-// ];
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesUrl },
+];
 
 export default function IndexRoute() {
   return (
@@ -18,6 +18,9 @@ export default function IndexRoute() {
           <ul>
             <li>
               <Link to="jokes">Read Jokes</Link>
+            </li>
+            <li>
+              <Link to="restaraunts">Restataunts</Link>
             </li>
             <li>
               <Link reloadDocument to="/jokes.rss">
